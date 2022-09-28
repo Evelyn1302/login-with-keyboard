@@ -1,0 +1,114 @@
+/*
+    Project 03
+    Header, login screen styling
+*/
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.header_name{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Courgette';
+
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
+    
+    transition: transform 500ms;
+}
+
+.capital{
+    font-size: 4.5rem;
+}
+
+.small{
+    font-size: 3rem;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+    transition: opacity 500ms;
+}
+
+.visibility{
+    vertical-align: middle;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer;
+}
+
+.username,
+.password{
+    outline: none;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    color: rgb(177, 90, 67);
+
+    border-style: solid;
+    border-color: rgb(177, 90, 67);
+    border-radius: 5px;
+    border-width: 2px;
+
+    font-family: 'Courgette';
+    font-size: 1rem;
+    text-align: center;
+
+    padding: 3px 10px;
+    margin: 2px;
+
+    transition: transform 250ms,
+                opacity 250ms;
+}
+
+.username::placeholder,
+.password::placeholder{
+    color: rgba(177, 90, 67, 0.65);
+}
+
+.username:hover,
+.password:hover{
+    transform: scale(1.2);
+}
+
+.username:focus,
+.password:focus{
+    transform: scale(1.2);
+    /*width: 300px;*/
+    opacity: 0.95;
+}
+
+.login_button{
+    background-color: rgb(218, 158, 140);
+    
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 15px;
+
+    font-family: 'Courgette';
+    font-size: 1.15rem;
+    font-weight: 700;
+
+    padding: 5px 10px;
+    margin-top: 20px;
+
+    transition: transform 200ms,
+                opacity 250ms;
+}
+
+.login_button:hover{
+    transform: scale(1.2);
+    opacity: 0.85;
+}

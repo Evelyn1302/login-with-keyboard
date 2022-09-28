@@ -1,0 +1,102 @@
+/*
+    Project 03
+    Keyboard styling
+*/
+
+.keyboard{
+    background-color: rgba(218, 158, 140, 0.4);
+    box-shadow: 0 0 50px rgba(218, 158, 140, 0.9);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 90vw;
+    height: 35vw;
+    min-width: 650px;
+    max-width: 900px;
+    min-height: 253px;
+    max-height: 350px;
+
+    padding: 0px;
+    margin: 20px 0px 0px 0px;
+
+    border-radius: 200px;
+    border-color: rgb(177, 90, 67);
+    border-style: solid;
+    border-width: 4px;
+
+    z-index: 9;
+
+    transition: opacity 500ms;
+}
+
+.keys_container{
+    text-align: center;
+}
+
+.keyboard_key{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+
+    background-color: rgba(218, 158, 140, 0.9);
+    color: rgb(177, 90, 67);
+
+    padding: 0px;
+    margin: 3px;
+    outline: none;                  /* removes outline on mobile devices when touching keyboard */
+    cursor: pointer;
+
+    border-color: rgb(159, 96, 39);
+    border-style: solid;
+    border-width: 2px;
+
+    font-family: 'Courgette';
+    font-size: 1.1rem;             /* 5% larger than root-element-size */
+    font-weight: 700;
+
+    transition: transform 300ms;
+}
+
+.keyboard_key:hover{
+    transform: scale(1.25);
+}
+
+.keyboard_key:active{
+    background-color: rgba(218, 158, 140, 0.75);
+    transform: scale(0.8);
+}
+
+.key_small{
+    width: 5vw;
+    height: 5vw;
+    min-width: 35px;
+    max-width: 50px;
+    min-height: 35px;
+    max-height: 50px;
+    border-radius: 50%;
+}
+
+.key_medium{
+    width: 10vw;
+    height: 5vw;
+    min-width: 70px;
+    max-width: 100px;
+    min-height: 35px;
+    max-height: 50px;
+    border-radius: 20px;
+    z-index: 100;
+}
+
+.key_large{
+    width: 30vw;
+    height: 5vw;
+    min-width: 210px;
+    max-width: 300px;
+    min-height: 35px;
+    max-height: 50px;
+    border-radius: 20px;
+}
